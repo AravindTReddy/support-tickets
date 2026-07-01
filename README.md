@@ -1,4 +1,4 @@
-# Support Tickets Dashboard (Hyatt Technical Assessment)
+# Support Tickets Dashboard
 
 This is a full-stack support tickets dashboard built to demonstrate modern React development, API abstraction, and AWS backend design.
 
