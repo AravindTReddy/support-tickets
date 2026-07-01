@@ -52,7 +52,7 @@ If this `GET /tickets?search=\<term\>` endpoint were moving to a production envi
 Instead of handling the data in-memory, the production architecture would work like this:
 1. **Client Request:** The React frontend sends a GET request with the search term to an AWS API Gateway endpoint.
 2. **Lambda Invocation:** API Gateway triggers the AWS Lambda function, passing the search term via the event payload.
-3. **Database Query:** The Lambda function connects to Amazon DocumentDB (using the MongoDB Node.js Driver).
+3. **Database Query:** The Lambda function connects to Amazon DocumentDB (using the AWS Node.js SDK).
 4. **Response:** DocumentDB executes the search and returns only the matching, paginated results to Lambda, which formats the JSON response and sends it back to the frontend.
 
 ### 2. DocumentDB Data Model & Indexing
